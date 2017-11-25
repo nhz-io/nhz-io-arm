@@ -1,0 +1,57 @@
+{
+  "name": "@nhz.io/arm",
+  "version": "0.0.0",
+  "description": "Abstract Resource Manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp tdd",
+    "test": "gulp test",
+    "lint": "gulp lint",
+    "build": "gulp",
+    "coveralls": "npm test && coveralls < ./coverage/lcov.info || echo Coverage Failed",
+    "prepublishOnly": "npm run build",
+    "prepush": "npm test",
+    "postpublish": "npm run coveralls"
+  },
+  "author": "Ishi Ruy <dev@nhz.io>",
+  "homepage": "https://github.com/nhz-io/nhz-io-arm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhz-io/nhz-io-arm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nhz-io/nhz-io-arm/issues"
+  },
+  "keywords": [
+    "nhz-io",
+    "nhz.io"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.x.x",
+    "npm": ">= 5.x.x"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coffee-coverage": "^2.0.1",
+    "coffeescript": "^2.0.2",
+    "coveralls": "^3.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-coffeescript": "0.0.15",
+    "gulp-spawn-mocha": "^4.0.1",
+    "husky": "^0.14.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "pump": "^1.0.3",
+    "rollup-plugin-cleanup": "^2.0.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-stream": "^1.24.1",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+*
+!README.md
+!coffeelint.json
+!gulpfile.js
+!gulpfile.litcoffee
+!.travis.yml
+!.npmignore
+!.gitignore
+!LICENSE
+!package.json
+!package-lock.json
+!.editorconfig
+!src
+!src/*
+!test
+!test/*
