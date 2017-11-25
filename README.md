@@ -18,7 +18,7 @@ const { Resource, Registry, Manager } = require('@nhz.io/arm')
 
 ```
 
-## Version 0.0.0
+## Version 1.0.0
 
 ## License [MIT](LICENSE)
 
