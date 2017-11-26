@@ -1,11 +1,15 @@
 # Manager test
 
+    { EventEmitter } = require 'events'
     should = (require 'chai').should()
 
     Registry = require '../src/Registry'
     Manager = require '../src/Manager'
 
     describe 'Manager', ->
+
+      it 'should be subclass of EventEmitter', ->
+        expect(EventEmitter.prototype.isPrototypeOf Manager.prototype).to.be.true
 
       describe '#constructor()', ->
 
