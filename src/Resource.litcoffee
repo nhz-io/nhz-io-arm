@@ -1,9 +1,13 @@
 # Resource
 
-    class Resource then constructor: (identifier) ->
+    { EventEmitter } = require 'events'
 
-      throw TypeError 'Missing identifier' unless identifier
+    class Resource extends EventEmitter
+      constructor: (identifier) ->
+        throw TypeError 'Missing identifier' unless identifier
 
-      @identifier = identifier
+        super()
+
+        @identifier = identifier
 
     module.exports = Resource

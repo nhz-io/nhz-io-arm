@@ -1,10 +1,15 @@
 # Resource tests
 
+    { EventEmitter } = require 'events'
+
     should = (require 'chai').should()
 
     Resource = require '../src/Resource'
 
     describe 'Resource', ->
+
+      it 'should be subclass of EventEmitter', ->
+        expect(EventEmitter.prototype.isPrototypeOf Resource.prototype).to.be.true
 
       describe '#constructor()', ->
 
