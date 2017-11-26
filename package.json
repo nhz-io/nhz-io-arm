@@ -1,6 +1,6 @@
 {
   "name": "@nhz.io/arm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Abstract Resource Manager",
   "main": "index.js",
   "scripts": {

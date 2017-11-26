@@ -18,10 +18,10 @@ const { Resource, Registry, Manager } = require('@nhz.io/arm')
 
 ```
 
-## Version 1.0.2
+## Version 1.0.3
 
 ## License [MIT](LICENSE)
 
 [travis]: https://img.shields.io/travis/nhz-io/nhz-io-arm.svg?style=flat
 [npm]: https://img.shields.io/npm/v/@nhz.io/arm.svg?style=flat
-[coveralls]: https://coveralls.io/repos/github/nhz-io/nhz-io-arm/badge.svg?branch=v1.0.2
+[coveralls]: https://coveralls.io/repos/github/nhz-io/nhz-io-arm/badge.svg?branch=v1.0.3

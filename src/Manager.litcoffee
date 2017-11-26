@@ -1,10 +1,14 @@
 # Manager
 
+    { EventEmitter } = require 'events'
+
     Registry = require './Registry'
 
-    class Manager
+    class Manager extends EventEmitter
 
       constructor: (@registry) ->
+
+        super()
 
         @registry ?= new Registry
 
